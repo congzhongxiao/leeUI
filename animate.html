@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>LIUI-V2</title>
+<!-- Bootstrap Core CSS -->
+<link href="static/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- 列表 -->
+<link href="static/plugins/bootstrap-table/bootstrap-table.css" rel="stylesheet">
+<!-- 弹出对话框 -->
+<link href="static/plugins/bootstrap-dialog/css/bootstrap-dialog.css" rel="stylesheet">
+<!-- 消息提示 -->
+<link href="static/plugins/toastr/toastr.css" rel="stylesheet">
+<link href="static/plugins/pace/themes/pace-theme-minimal.css" rel="stylesheet">
+<!-- 菜单 -->
+<link href="static/plugins/metisMenu/metisMenu.css" rel="stylesheet">
+<!-- 动画样式 -->
+<link href="static/plugins/animate/animate.css" rel="stylesheet">
+<!-- 自定义样式 CSS -->
+<link href="static/css/main-style.css" rel="stylesheet">
+<!-- Custom Fonts -->
+<link href="static/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="skin-default">
+	<div class="wrapper">
+		<div class="main-header">
+			<nav class="navbar nav-static-top">
+				<a href="#" class="logo  hidden-sm hidden-xs"><i class="fa  fa-coffee"></i> <span>LIUI2.0</span></a>
+				<div class="navbar-custom-menu pull-left ">
+					<ul class="nav navbar-nav">
+						<li><a href="javascript:void(0);" class="sidebar-toggle"> <i class="fa fa-bars"></i>
+						</a></li>
+						<li><a href="javascript:void(0);">系统功能</a></li>
+						<li class="dropdown  hidden-sm hidden-xs"><a href="#" class="dropdown-toggle" data-toggle="dropdown">更多<i class="fa fa-caret-down"></i>
+						</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">英语</a></li>
+								<li><a href="#">中文</a></li>
+								<li><a href="#">日文</a></li>
+							</ul></li>
+					</ul>
+				</div>
+				<div class="navbar-custom-menu pull-right">
+					<ul class="nav navbar-nav">
+						<li class="dropdown message-menu"><a href="#" class="dropdown-toggle" data-toggle="dropdown" title="系统功能" data-placement="bottom" data-toggle="tooltip"> <i class="fa fa-envelope-o"></i> <span class="label label-success">4</span>
+						</a>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li>
+									<p class="red">你有4条未读信息</p>
+								</li>
+								<li><a href="#"> <span class="photo"> <img alt="" src="./static/images/avator.jpg">
+									</span> <span class="subject"> <span class="from">系统管理员</span> <span class="time">5分钟前</span>
+									</span> <span class="message">公司培训通知于今天下午开始公司培训通知于今天下午开始公司培训通知于今天下午开始公司培训通知于今天下午开始公司培训通知于今天下午开始</span>
+								</a></li>
+								<li><a href="#"> <span class="photo"> <img alt="" src="./static/images/avator.jpg">
+									</span> <span class="subject"> <span class="from">系统管理员</span> <span class="time">5分钟前</span>
+									</span> <span class="message">公司培训通知于今天下午开始</span>
+								</a></li>
+								<li><a href="#"> <span class="photo"> <img alt="" src="./static/images/avator.jpg">
+									</span> <span class="subject"> <span class="from">系统管理员</span> <span class="time">5分钟前</span>
+									</span> <span class="message">公司培训通知于今天下午开始</span>
+								</a></li>
+								<li><a href="#" class="dropdown-footer">显示所有通知</a></li>
+							</ul></li>
+						<li class="dropdown notifications-menu "><a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-bell-o"></i> <span class="label label-warning">4</span>
+						</a>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li>
+									<p class="yellow">你有4条通知</p>
+								</li>
+								<li><a href="#"> <span class="label label-danger"> <i class="fa fa-bell-o"></i>
+									</span> 服务于50分钟前重启。 <span class="pull-right text-muted small">34 分钟</span>
+								</a></li>
+								<li><a href="#"> <span class="label label-danger"> <i class="fa fa-bell-o"></i>
+									</span> 服务于50分钟前重启。 <span class="pull-right text-muted small">34 分钟</span>
+								</a></li>
+								<li><a href="#"> <span class="label label-danger"> <i class="fa fa-bell-o"></i>
+									</span> 服务于50分钟前重启。 <span class="pull-right text-muted small">34 分钟</span>
+								</a></li>
+								<li><a href="#"> <span class="label label-warning"> <i class="fa fa-plus"></i>
+									</span> 服务于10分钟停机了。 <span class="pull-right text-muted small">23 分钟</span>
+								</a></li>
+								<li><a href="#" class="dropdown-footer">显示所有通知</a></li>
+							</ul></li>
+						<li class="dropdown user user-menu "><a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img alt="" src="./static/images/avator.jpg" class="user-image"> <span> 李永涛 <i class="fa fa-caret-down"></i>
+							</span>
+						</a>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li><a href="#"><i class="fa fa-user"></i>个人信息</a></li>
+								<li><a href="#"><i class="fa fa-cog"></i> 修改密码</a></li>
+								<li><a href="#"><i class="fa fa-power-off"></i> 注销</a></li>
+							</ul></li>
+						<li><a href="javascript:void(0);" title="退出" data-placement="bottom" data-toggle="tooltip"> <i class="fa fa-power-off"></i>
+						</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="main-left">
+			<div class="left-sidebar">
+				<!-- 左侧菜单头像区域 -->
+				<div class="user-pannel">
+					<div class="pull-left image">
+						<img class="img-circle user-left-img" src="./static/images/avator.jpg">
+					</div>
+					<div class="pull-left info">
+						<p>李永涛</p>
+						<a href="#"><i class="fa fa-circle text-success"></i> 当前在线</a>
+					</div>
+				</div>
+				<!--end 左侧菜单头像区域 -->
+				<ul class="nav left-menu" id="left-menu">
+					<li class="header">导航 <span class="header-second">NAVIGATION</span>
+					</li>
+					<li><a href="index.html"><i class="fa fa-dashboard fa-fw"></i> 首页</a></li>
+					<li><a href="javascript:void(0);"><i class="fa fa-flask fa-fw"></i>UI元素<span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li><a href="buttons.html">按钮</a></li>
+							<li><a href="javascript:void(0);">面板 <span class="fa arrow"></span></a>
+								<ul class="nav nav-third-level collapse ">
+									<li><a href="panel-basic.html">面板内容</a></li>
+								</ul></li>
+							<li><a href="icons.html">图标</a></li>
+							<li><a href="dropdown.html">下拉菜单</a></li>
+							<li><a href="typography.html">排版</a></li>
+							<li><a href="tabs-accordions.html">选项卡+折叠面板</a></li>
+							<li><a href="notifications.html">通知+提示</a></li>
+							<li><a href="grids.html">栅格</a></li>
+							<li><a href="animate.html">动画</a></li>
+							<li><a href="widget.html">小部件</a></li>
+							<li><a href="general.html">一般元素</a></li>
+							<li><a href="sparkline.html">SparkLine图表</a></li>
+						</ul></li>
+				</ul>
+			</div>
+		</div>
+		<div class="main-content">
+			<div class="row">
+				<div class="main-content-header">
+					<ul class="breadcrumb">
+						<li><a href="#"><i class="fa fa-home"></i>首页</a></li>
+						<li class="active">动画</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="panel">
+						<div class="panel-heading">效果演示区域</div>
+						<div class="panel-body">
+							<div id="animate_example">
+								<div style="margin: auto; height: 200px; width: 300px; background-color: #ddd; padding: 20px;">
+									<h4>CSS动画区域</h4>
+									<p>这是CSS动画Animate.css的动画演示效果，点击下面的效果按钮可以体验动画。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="panel ">
+						<div class="panel-heading">动画操作区域</div>
+						<div class="panel-body">
+							<h4 class="m-b-lg">点击下面按钮，可以从“动画效果示例框”中预览效果</h4>
+
+							<!--<h5 class="text-navy">Attention Seekers</h5>-->
+							<a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="bounce">bounce</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="flash">flash</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="pulse">pulse</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="rubberBand">rubberBand</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="shake">shake</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="swing">swing</a> <a href="javascript:void(0);" class="btn btn-default animation_select"
+								data-animation="tada">tada</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="wobble">wobble</a>
+
+
+							<!--<h5 class="text-navy">Bouncing Entrances</h5>-->
+							<a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="bounceIn">bounceIn</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="bounceInDown">bounceInDown</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="bounceInLeft">bounceInLeft</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="bounceInRight">bounceInRight</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="bounceInUp">bounceInUp</a>
+
+
+							<!--<h5 class="text-navy">Bouncing Exits</h5>-->
+							<a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="bounceOut">bounceOut</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="bounceOutDown">bounceOutDown</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="bounceOutLeft">bounceOutLeft</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="bounceOutRight">bounceOutRight</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="bounceOutUp">bounceOutUp</a>
+							<!--<h5 class="text-navy">Fading Entrances</h5>-->
+							<a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="fadeIn">fadeIn</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="fadeInDown">fadeInDown</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="fadeInDownBig">fadeInDownBig</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="fadeInLeft">fadeInLeft</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="fadeInLeftBig">fadeInLeftBig</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="fadeInRight">fadeInRight</a> <a
+								href="javascript:void(0);" class="btn btn-default animation_select" data-animation="fadeInRightBig">fadeInRightBig</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="fadeInUp">fadeInUp</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="fadeInUpBig">fadeInUpBig</a>
+							<!--<h5 class="text-navy">Fading Exits</h5>-->
+							<a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="fadeOut">fadeOut</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="fadeOutDown">fadeOutDown</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="fadeOutDownBig">fadeOutDownBig</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="fadeOutLeft">fadeOutLeft</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="fadeOutLeftBig">fadeOutLeftBig</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="fadeOutRight">fadeOutRight</a> <a
+								href="javascript:void(0);" class="btn btn-default animation_select" data-animation="fadeOutRightBig">fadeOutRightBig</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="fadeOutUp">fadeOutUp</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="fadeOutUpBig">fadeOutUpBig</a>
+							<!--<h5 class="text-navy">Flippers</h5>-->
+							<a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="flip">flip</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="flipInX">flipInX</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="flipInY">flipInY</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="flipOutX">flipOutX</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="flipOutY">flipOutY</a>
+
+							<!--<h5 class="text-navy">Lightspeed</h5>-->
+							<a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="lightSpeedIn">lightSpeedIn</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="lightSpeedOut">lightSpeedOut</a>
+							<!--<h5 class="text-navy">Rotating Entrances</h5>-->
+							<a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="rotateIn">rotateIn</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="rotateInDownLeft">rotateInDownLeft</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="rotateInDownRight">rotateInDownRight</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="rotateInUpLeft">rotateInUpLeft</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="rotateInUpRight">rotateInUpRight</a>
+
+
+							<!--<h5 class="text-navy">Rotating Exits</h5>-->
+							<a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="rotateOut">rotateOut</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="rotateOutDownLeft">rotateOutDownLeft</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="rotateOutDownRight">rotateOutDownRight</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="rotateOutUpLeft">rotateOutUpLeft</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="rotateOutUpRight">rotateOutUpRight</a>
+
+							<!--<h5 class="text-navy">Sliders</h5>-->
+							<a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="slideInDown">slideInDown</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="slideInLeft">slideInLeft</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="slideInRight">slideInRight</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="slideOutLeft">slideOutLeft</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="slideOutRight">slideOutRight</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="slideOutUp">slideOutUp</a>
+							<!--<h5 class="text-navy">Specials</h5>-->
+							<a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="hinge">hinge</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="rollIn">rollIn</a> <a href="javascript:void(0);" class="btn btn-default animation_select" data-animation="rollOut">rollOut</a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-footer">
+			<div class="pull-left">
+				<strong>@版权所有：</strong>临沂市拓普网络股份有限公司
+			</div>
+			<div class="pull-right hidden-sm hidden-xs">@Copyright:2016-2017</div>
+		</div>
+	</div>
+	<!-- /#wrapper -->
+	<!-- #config -->
+	<div id="config-tool" class="closed">
+		<a class="config-tool-bar"><i class="fa  fa-cog"></i></a>
+		<div class="config-tool-content">
+			<h4>设置选项</h4>
+			<ul>
+				<li><input type="checkbox" id="config-fixed-header"> <span> 头部固定</span></li>
+				<li><input type="checkbox" id="config-fixed-left"> <span> 菜单固定 </span></li>
+				<li><input type="checkbox" id="config-fixed-footer"> <span> 底部固定 </span></li>
+			</ul>
+			<br>
+			<h4>主题颜色</h4>
+			<ul class="skin-colors clearfix" id="skin-colors">
+				<li><a class="skin-changer" data-skin="skin-black" data-toggle="tooltip" title="" style="background-color: #34495e;" data-original-title="黑色皮肤"> </a></li>
+				<li><a class="skin-changer" data-skin="skin-green" data-toggle="tooltip" title="" style="background-color: #2ecc71;" data-original-title="绿色皮肤"> </a></li>
+				<li><a class="skin-changer" data-skin="skin-blue" data-toggle="tooltip" title="" style="background-color: #03a9f4;" data-original-title="蓝色皮肤"> </a></li>
+				<li><a class="skin-changer" data-skin="skin-red" data-toggle="tooltip" title="" style="background-color: #e74c3c;" data-original-title="红色皮肤"> </a></li>
+				<li><a class="skin-changer" data-skin="skin-darkblue" data-toggle="tooltip" title="" style="background-color: #418BCA;" data-original-title="深蓝皮肤"> </a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- /#config -->
+	<!-- jQuery -->
+	<script src="static/plugins/jquery/jquery.min.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="static/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<!-- 菜单插件 JavaScript -->
+	<script src="static/plugins/metisMenu/metisMenu.js"></script>
+	<!-- 统计图表Echarts -->
+	<script src="static/plugins/echarts/echarts.js"></script>
+	<script src="static/plugins/echarts/theme/default.js"></script>
+	<!-- 消息提示插件 -->
+	<script src="static/plugins/toastr/toastr.js"></script>
+	<script src="static/plugins/bootstrap-dialog/js/bootstrap-dialog.js"></script>
+	<script src="static/plugins/bootstrap-table/bootstrap-table.js"></script>
+	<script src="static/plugins/sparkline/jquery.sparkline.js"></script>
+	<script src="static/plugins/pace/pace.js"></script>
+	<script src="static/plugins/slimscroll/jquery.slimscroll.js"></script>
+	<script src="static/js/sparkline-demo.js"></script>
+	<script src="static/js/liui-main.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$(".animation_select").click(function() {
+				$("#animate_example").removeAttr("class").attr("class", "");
+				var animation = $(this).attr("data-animation");
+				$("#animate_example").addClass("animated");
+				$("#animate_example").addClass(animation);
+			});
+		});
+	</script>
+</body>
+</html>

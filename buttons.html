@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>LIUI-V1</title>
+<!-- Bootstrap Core CSS -->
+<link href="static/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- 列表 -->
+<link href="static/plugins/bootstrap-table/bootstrap-table.css" rel="stylesheet">
+<!-- 弹出对话框 -->
+<link href="static/plugins/bootstrap-dialog/css/bootstrap-dialog.css" rel="stylesheet">
+<!-- 消息提示 -->
+<link href="static/plugins/toastr/toastr.css" rel="stylesheet">
+<!-- 菜单 -->
+<link href="static/plugins/metisMenu/metisMenu.css" rel="stylesheet">
+
+<!-- 自定义样式 CSS -->
+<link href="static/css/main-style.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link href="static/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="skin-default">
+
+	<div class="wrapper">
+		<div class="main-header">
+			<nav class="navbar nav-static-top">
+				<a href="#" class="logo  hidden-sm hidden-xs"><i class="fa  fa-coffee"></i> <span>LIUI2.0</span></a>
+				<div class="navbar-custom-menu pull-left ">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="javascript:void(0);" class="sidebar-toggle"> <i class="fa fa-bars"></i>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" >系统功能</a>
+						</li>
+						<li class="dropdown  hidden-sm hidden-xs">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">更多<i class="fa fa-caret-down"></i>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">英语</a>
+								</li>
+								<li>
+									<a href="#">中文</a>
+								</li>
+								<li>
+									<a href="#">日文</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="navbar-custom-menu pull-right">
+					<ul class="nav navbar-nav">
+						<li class="dropdown message-menu" >
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" title="系统功能" data-placement="bottom" data-toggle="tooltip"> <i class="fa fa-envelope-o"></i> <span class="label label-success">4</span>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li>
+									<p class="red">你有4条未读信息</p>
+								</li>
+								<li>
+									<a href="#"> <span class="photo">
+											<img alt="" src="./static/images/avator.jpg">
+										</span> <span class="subject">
+											<span class="from">系统管理员</span>
+											<span class="time">5分钟前</span>
+										</span> <span class="message" >公司培训通知于今天下午开始公司培训通知于今天下午开始公司培训通知于今天下午开始公司培训通知于今天下午开始公司培训通知于今天下午开始</span>
+									</a>
+								</li>
+								<li>
+									<a href="#"> <span class="photo">
+											<img alt="" src="./static/images/avator.jpg">
+										</span> <span class="subject">
+											<span class="from">系统管理员</span>
+											<span class="time">5分钟前</span>
+										</span> <span class="message">公司培训通知于今天下午开始</span>
+									</a>
+								</li>
+								<li>
+									<a href="#"> <span class="photo">
+											<img alt="" src="./static/images/avator.jpg">
+										</span> <span class="subject">
+											<span class="from">系统管理员</span>
+											<span class="time">5分钟前</span>
+										</span> <span class="message">公司培训通知于今天下午开始</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="dropdown-footer">显示所有通知</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown notifications-menu ">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-bell-o"></i> <span class="label label-warning">4</span>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li>
+									<p class="yellow">你有4条通知</p>
+								</li>
+								<li>
+									<a href="#"> <span class="label label-danger">
+											<i class="fa fa-bell-o"></i>
+										</span> 服务于50分钟前重启。 <span class="pull-right text-muted small">34 分钟</span>
+									</a>
+								</li>
+								<li>
+									<a href="#"> <span class="label label-danger">
+											<i class="fa fa-bell-o"></i>
+										</span> 服务于50分钟前重启。 <span class="pull-right text-muted small">34 分钟</span>
+									</a>
+								</li>
+								<li>
+									<a href="#"> <span class="label label-danger">
+											<i class="fa fa-bell-o"></i>
+										</span> 服务于50分钟前重启。 <span class="pull-right text-muted small">34 分钟</span>
+									</a>
+								</li>
+								<li>
+									<a href="#"> <span class="label label-warning">
+											<i class="fa fa-plus"></i>
+										</span> 服务于10分钟停机了。 <span class="pull-right text-muted small">23 分钟</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="dropdown-footer">显示所有通知</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown user user-menu ">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img alt="" src="./static/images/avator.jpg" class="user-image"> <span>
+									李永涛
+									<i class="fa fa-caret-down"></i>
+								</span>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li>
+									<a href="#"><i class="fa fa-user"></i>个人信息</a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-cog"></i> 修改密码</a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-power-off"></i> 注销</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0);" title="退出" data-placement="bottom" data-toggle="tooltip"> <i class="fa fa-power-off"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="main-left">
+			<div class="left-sidebar">
+				<!-- 左侧菜单头像区域 -->
+				<div class="user-pannel">
+					<div class="pull-left image">
+						<img class="img-circle user-left-img" src="./static/images/avator.jpg">
+					</div>
+					<div class="pull-left info">
+						<p>李永涛</p>
+						<a href="#"><i class="fa fa-circle text-success"></i> 当前在线</a>
+					</div>
+				</div>
+				<!--end 左侧菜单头像区域 -->
+				<ul class="nav left-menu" id="left-menu">
+					<li class="header">
+						导航
+						<span class="header-second">NAVIGATION</span>
+					</li>
+					<li>
+						<a href="index.html"><i class="fa fa-dashboard fa-fw"></i> 首页</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);"><i class="fa fa-flask fa-fw"></i>UI元素<span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li>
+								<a href="general.html">一般元素</a>
+							</li>
+							<li>
+								<a href="buttons.html">按钮</a>
+							</li>
+							<li>
+								<a href="widget.html">小部件</a>
+							</li>
+							<li>
+								<a href="sparkline.html">SparkLine图表</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:void(0);"><i class="fa fa-bars fa-fw"></i>三级菜单<span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li>
+								<a href="erji">二级菜单</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">三级菜单 <span class="fa arrow"></span></a>
+								<ul class="nav nav-third-level collapse ">
+									<li>
+										<a href="#">三级一</a>
+									</li>
+									<li>
+										<a href="#">三级二</a>
+									</li>
+									<li>
+										<a href="#">三级三</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="main-content">
+			<div class="row">
+				<div class="main-content-header">
+					<ul class="breadcrumb">
+						<li>
+
+							<a href="#"><i class="fa fa-home"></i>首页</a>
+						</li>
+						<li class="active">按钮</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="panel">
+						<div class="panel-heading">按钮颜色</div>
+						<div class="panel-body">
+							<p>
+								可使用class来快速改变按钮的颜色，如
+								<code>.btn-primary</code>
+							</p>
+							<p>
+								<button type="button" class="btn  btn-default">默认</button>
+								<button type="button" class="btn  btn-primary">重要</button>
+								<button type="button" class="btn  btn-success">成功</button>
+								<button type="button" class="btn  btn-info">信息</button>
+								<button type="button" class="btn  btn-warning">警告</button>
+								<button type="button" class="btn  btn-danger">危险</button>
+								<button type="button" class="btn  btn-link">链接</button>
+							</p>
+							<p>
+								可使用class来实现描边按钮效果<code>.btn-outline</code>
+							</p>
+							<p>
+								<button type="button" class="btn btn-outline btn-default">默认</button>
+								<button type="button" class="btn btn-outline btn-primary">重要</button>
+								<button type="button" class="btn btn-outline btn-success">成功</button>
+								<button type="button" class="btn btn-outline btn-info">信息</button>
+								<button type="button" class="btn btn-outline btn-warning">警告</button>
+								<button type="button" class="btn btn-outline btn-danger">危险</button>
+							</p>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading">下拉按钮</div>
+						<div class="panel-body">
+						<p>下拉按钮组</p>
+						<p>
+							<div class="btn-group">
+								<button class="btn btn-default" type="button">默认</button>
+								<button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">
+									<span class="caret"></span>
+								</button>
+								<ul role="menu" class="dropdown-menu">
+									<li><a href="#">选项一</a></li>
+									<li><a href="#">选项二</a></li>
+									<li><a href="#">选项三</a></li>
+									<li class="divider"></li>
+									<li><a href="#">选项四</a></li>
+								</ul>
+							</div>
+							<div class="btn-group dropup">
+								<button class="btn btn-default" type="button">上拉</button>
+								<button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">
+									<span class="caret"></span>
+								</button>
+								<ul role="menu" class="dropdown-menu">
+									<li><a href="#">选项一</a></li>
+									<li><a href="#">选项二</a></li>
+									<li><a href="#">选项三</a></li>
+									<li class="divider"></li>
+									<li><a href="#">选项四</a></li>
+								</ul>
+							</div>
+							<div class="btn-group">
+								<button data-toggle="dropdown" class="btn btn-info dropdown-toggle" type="button">
+									更多<span class="caret"></span>
+								</button>
+								<ul role="menu" class="dropdown-menu dropdown-menu-right">
+									<li><a href="#">选项一</a></li>
+									<li><a href="#">选项二</a></li>
+									<li><a href="#">选项三</a></li>
+									<li class="divider"></li>
+									<li><a href="#">选项四</a></li>
+								</ul>
+							</div>
+							<div class="btn-group">
+								<button class="btn btn-info" type="button">1</button>
+								<button class="btn btn-info" type="button">2</button>
+								<button class="btn btn-info" type="button">3</button>
+								<div class="btn-group">
+									<button data-toggle="dropdown" class="btn btn-info dropdown-toggle" type="button">
+										更多 <span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu">
+										<li><a href="#">下拉选项</a></li>
+										<li><a href="#">下拉选项</a></li>
+										<li><a href="#">下拉选项</a></li>
+									</ul>
+								</div>
+							</div>
+						</p>
+						<p>下拉按钮</p>
+						<p>
+							<div class="btn-group">
+								<button data-toggle="dropdown" class="btn btn-primary dropdown-toggle" type="button">
+									操作 <span class="caret"></span>
+								</button>
+								<ul role="menu" class="dropdown-menu">
+									<li><a href="#">编辑</a></li>
+									<li><a href="#">删除</a></li>
+									<li><a href="#">复制</a></li>
+									<li class="divider"></li>
+									<li><a href="#">属性</a></li>
+								</ul>
+							</div>
+							<div class="btn-group dropup">
+								<button data-toggle="dropdown" class="btn btn-success dropdown-toggle" type="button">
+									<i class="icon fa fa-windows"></i><span class="caret"></span>
+								</button>
+								<ul role="menu" class="dropdown-menu">
+									<li><a href="#">编辑</a></li>
+									<li><a href="#">删除</a></li>
+									<li><a href="#">复制</a></li>
+									<li class="divider"></li>
+									<li><a href="#">属性</a></li>
+								</ul>
+							</div>
+							<div class="btn-group ">
+								<button data-toggle="dropdown" class="btn btn-danger dropdown-toggle" type="button">
+									<i class="icon fa fa-home"></i><span class="caret"></span>
+								</button>
+								<ul role="menu" class="dropdown-menu dropdown-menu-right">
+									<li><a href="#">编辑</a></li>
+									<li><a href="#">删除</a></li>
+									<li><a href="#">复制</a></li>
+									<li class="divider"></li>
+									<li><a href="#">属性</a></li>
+								</ul>
+							</div>
+							<div class="btn-group dropup">
+								<button data-toggle="dropdown" class="btn btn-warning dropdown-toggle btn-sm" type="button">
+									警告 <span class="caret"></span>
+								</button>
+								<ul role="menu" class="dropdown-menu dropdown-menu-right">
+									<li><a href="#">编辑</a></li>
+									<li><a href="#">删除</a></li>
+									<li><a href="#">复制</a></li>
+									<li class="divider"></li>
+									<li><a href="#">属性</a></li>
+								</ul>
+							</div>
+							<div class="btn-group">
+								<button data-toggle="dropdown" class="btn btn-info dropdown-toggle btn-xs" type="button">
+									成功 <span class="caret"></span>
+								</button>
+								<ul role="menu" class="dropdown-menu">
+									<li><a href="#">编辑</a></li>
+									<li><a href="#">删除</a></li>
+									<li><a href="#">复制</a></li>
+									<li class="divider"></li>
+									<li><a href="#">属性</a></li>
+								</ul>
+							</div>
+						</p>
+							
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading">两端对齐的按钮</div>
+						<div class="panel-body">
+							<p>
+							<div class="btn-group btn-group-justified">
+								<div class="btn-group">
+									<button type="button" class="btn btn-info"><i class="icon fa fa-star"></i><br>收藏</button>
+								</div>
+								<div class="btn-group">
+									<button type="button" class="btn btn-primary"><i class="icon fa fa-home"></i><br>信息</button>
+								</div>
+								<div class="btn-group">
+									<button type="button" class="btn btn-success"><i class="icon fa fa-star"></i><br>查看</button>
+								</div>
+							</div>
+							</p>
+							<p>
+							<div class="btn-group btn-group-justified">
+								<div class="btn-group">
+									<button type="button" class="btn btn-warning">警告</button>
+								</div>
+								<div class="btn-group">
+									<button type="button" class="btn btn-danger">危险</button>
+								</div>
+							</div>
+							</p>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading">块级按钮</div>
+						<div class="panel-body">
+							<p>块级按钮，可通过添加class的值为<code>.btn-block</code>来实现</p>
+							<p>
+								<button type="button" class="btn btn-primary btn-lg btn-block">块级大按钮</button>
+								<button type="button" class="btn btn-info btn-lg btn-round btn-block">圆角块级大按钮</button>
+								<button type="button" class="btn btn-success btn-lg btn-outline btn-block">描边块级大按钮</button>
+								<button type="button" class="btn btn-warning  btn-round btn-block">圆角块级按钮</button>
+								<button type="button" class="btn btn-danger btn-outline btn-round btn-block">圆角块级按钮</button>
+							</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-lg-6">
+					<div class="panel">
+						<div class="panel-heading">按钮大小和圆角</div>
+						<div class="panel-body">
+							<p>
+								可以通过添加class的值为
+								<code>.btn-lg</code>
+								,
+								<code>.btn-sm</code>
+								, or
+								<code>.btn-xs</code>
+								来修改按钮的大小
+							</p>
+							<p>
+								<button type="button" class="btn btn-success btn-lg">大按钮</button>
+								<button type="button" class="btn btn-primary">默认大小</button>
+								<button type="button" class="btn btn-info btn-sm">小按钮</button>
+								<button type="button" class="btn btn-danger btn-xs">mini按钮</button>
+								<button type="button" class="btn btn-outline btn-danger btn-xs">mini按钮</button>
+							</p>
+							<p>圆角按钮<code>.btn-round</code><code>.btn-round-left</code><code>.btn-round-right</code></p>
+							<p>
+								<button type="button" class="btn btn-primary btn-round">两端圆角</button>
+								<button type="button" class="btn btn-success btn-outline btn-round">描边圆角</button>
+								<button type="button" class="btn btn-info btn-round-left">左端圆角</button>
+								<button type="button" class="btn btn-warning btn-outline btn-round-right ">右端圆角</button>
+							</p>
+							<p>
+							</p>
+						</div>
+					</div>
+
+					<div class="panel">
+						<div class="panel-heading">图标按钮</div>
+						<div class="panel-body">
+							<p>
+								<button class="btn btn-primary " type="button">
+									<i class="fa fa-check"></i> 提交
+								</button>
+								<button class="btn btn-success " type="button">
+									<i class="fa fa-upload"></i><span class="bold"> 上传</span>
+								</button>
+								<button class="btn btn-info " type="button">
+									<i class="fa fa-paste"></i> 编辑
+								</button>
+								<button class="btn btn-warning " type="button">
+									<i class="fa fa-warning"></i> <span class="bold"> 警告</span>
+								</button>
+								<button class="btn btn-default " type="button">
+									<i class="fa fa-map-marker"></i> 百度地图
+								</button>
+								<button class="btn btn-success " type="button">
+								<i class="icon fa fa-wechat"></i>微信
+								</button>
+							</p>
+							<p>
+								<button class="btn btn-success " type="button">
+									<i class="fa fa-wechat"></i>
+								</button>
+								
+								<button class="btn btn-primary " type="button">
+									<i class="fa fa-qq"></i>
+								</button>
+								<button class="btn btn-warning " type="button">
+									<i class="fa fa-weibo"></i>
+								</button>
+								<button class="btn btn-danger " type="button">
+									<i class="fa fa-star"></i>
+								</button>
+								<button class="btn btn-outline btn-info " type="button">
+									<i class="fa fa-cog"></i>
+								</button>
+								<button class="btn btn-outline btn-success " type="button">
+									<i class="fa fa-flask"></i>
+								</button>
+								<button class="btn btn-outline btn-primary " type="button">
+									<i class="fa fa-windows"></i>
+								</button>
+								<button class="btn btn-outline btn-warning " type="button">
+									<i class="fa fa-calendar"></i>
+								</button>
+								<button class="btn btn-outline btn-danger " type="button">
+									<i class="fa fa-send"></i>
+								</button>
+							</p>
+							<p>
+								<button class="btn btn-danger btn-circle" type="button">
+									<i class="fa fa-send"></i>
+								</button>
+								<button class="btn btn-success btn-circle " type="button">
+									<i class="fa fa-wechat"></i>
+								</button>
+								
+								<button class="btn btn-primary btn-circle" type="button">
+									<i class="fa fa-qq"></i>
+								</button>
+								<button class="btn btn-warning btn-circle" type="button">
+									<i class="fa fa-weibo"></i>
+								</button>
+								<button class="btn btn-danger btn-circle" type="button">
+									<i class="fa fa-star"></i>
+								</button>
+								<button class="btn btn-info btn-circle" type="button">
+									<i class="fa fa-cog"></i>
+								</button>
+								<button class="btn btn-warning btn-outline btn-circle" type="button">
+									<i class="fa fa-weibo"></i>
+								</button>
+								<button class="btn btn-danger btn-outline btn-circle" type="button">
+									<i class="fa fa-star"></i>
+								</button>
+								<button class="btn btn-info btn-outline btn-circle" type="button">
+									<i class="fa fa-cog"></i>
+								</button>
+							</p>
+							<p>
+								<button class="btn btn-danger btn-circle btn-lg" type="button">
+									<i class="fa fa-send"></i>
+								</button>
+								<button class="btn btn-success btn-circle btn-lg" type="button">
+									<i class="fa fa-wechat"></i>
+								</button>
+								
+								<button class="btn btn-primary btn-circle btn-lg" type="button">
+									<i class="fa fa-qq"></i>
+								</button>
+								<button class="btn btn-warning btn-circle btn-lg" type="button">
+									<i class="fa fa-weibo"></i>
+								</button>
+								<button class="btn btn-danger btn-circle btn-lg" type="button">
+									<i class="fa fa-star"></i>
+								</button>
+								<button class="btn btn-info btn-circle btn-lg" type="button">
+									<i class="fa fa-cog"></i>
+								</button>
+								<button class="btn btn-warning btn-outline btn-circle btn-lg" type="button">
+									<i class="fa fa-weibo"></i>
+								</button>
+								<button class="btn btn-danger btn-outline btn-circle btn-lg" type="button">
+									<i class="fa fa-star"></i>
+								</button>
+								<button class="btn btn-info btn-outline btn-circle btn-lg" type="button">
+									<i class="fa fa-cog"></i>
+								</button>
+							</p>
+							<p>
+								<button class="btn btn-danger btn-prue " type="button">
+									<i class="fa fa-send"></i>
+								</button>
+								<button class="btn btn-success btn-prue" type="button">
+									<i class="fa fa-wechat"></i>
+								</button>
+								
+								<button class="btn btn-primary btn-prue" type="button">
+									<i class="fa fa-qq"></i>
+								</button>
+								<button class="btn btn-warning btn-prue" type="button">
+									<i class="fa fa-weibo"></i>
+								</button>
+								<button class="btn btn-danger btn-prue" type="button">
+									<i class="fa fa-star"></i>
+								</button>
+								<button class="btn btn-info btn-prue" type="button">
+									<i class="fa fa-cog"></i>
+								</button>
+							</p>
+							
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading">按钮组</div>
+						<div class="panel-body">
+							<div class="btn-group">
+								<button class="btn btn-success" type="button"><i class="fa fa-play"></i></button>
+								<button class="btn btn-success" type="button"><i class="fa fa-pause"></i></button>
+								<button class="btn btn-success" type="button"><i class="fa fa-stop"></i></button>
+							</div>
+							<div class="btn-group">
+								<button class="btn btn-success btn-prue" type="button"><i class="fa fa-play"></i></button>
+								<button class="btn btn-primary btn-prue" type="button"><i class="fa fa-pause"></i></button>
+								<button class="btn btn-danger btn-prue" type="button"><i class="fa fa-stop"></i></button>
+							</div>
+							<div class="btn-group-vertical">
+								<button class="btn btn-default" type="button">上面</button>
+								<button class="btn btn-default" type="button">中间</button>
+								<button class="btn btn-default" type="button">下面</button>
+							</div>
+							<p>工具栏按钮组<code>.btn-toolbar</code></p>
+							<div class="btn-toolbar">
+								<div class="btn-group">
+									<button class="btn btn-info" type="button"><i class="fa fa-font"></i></button>
+									<button class="btn btn-info" type="button"><i class="fa fa-bold"></i></button>
+									<button class="btn btn-info" type="button"><i class="fa fa-italic"></i></button>
+					
+								</div>
+								<div class="btn-group">
+									<button class="btn btn-info" type="button"><i class="fa fa-text-height"></i></button>
+									<button class="btn btn-info" type="button"><i class="fa fa-text-width"></i></button>
+									<button class="btn btn-info" type="button"><i class="fa fa-align-left"></i></button>
+									<button class="btn btn-info" type="button"><i class="fa fa-align-center"></i></button>
+									<button class="btn btn-info" type="button"><i class="fa fa-align-right"></i></button>
+									<button class="btn btn-info" type="button"><i class="fa fa-align-justify"></i></button>
+								
+								</div>
+								<div class="btn-group">
+										<button class="btn btn-info" type="button"><i class="fa fa-briefcase"></i></button>
+										<button class="btn btn-info" type="button"><i class="fa fa-arrows-alt"></i></button>
+										<button class="btn btn-info" type="button"><i class="fa fa-video-camera"></i></button>
+								</div>
+							</div>
+							<br>
+							<div class="btn-group" data-toggle="buttons">
+								<label class="btn btn-primary"> <input type="checkbox">苹果
+								</label> <label class="btn btn-primary"> <input type="checkbox">橘子
+								</label> <label class="btn btn-primary"> <input type="checkbox">西瓜
+								</label>
+							</div>
+							<div class="btn-group" data-toggle="buttons">
+								<label class="btn btn-default active"> <input type="radio" name="options" id="option1"> 土豆
+								</label> <label class="btn btn-default"> <input type="radio" name="options" id="option2">白菜
+								</label> <label class="btn btn-default"> <input type="radio" name="options" id="option3"> 豆芽
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading">Tooltip</div>
+						<div class="panel-body">
+							<button title="Tooltip on right" data-placement="right" data-toggle="tooltip" class="btn btn-default tooltips" type="button">Tooltip Right</button>
+							<button title="" data-placement="left" data-toggle="tooltip" class="btn btn-default tooltips" type="button" data-original-title="Tooltip on left">Tooltip Left</button>
+							<button title="Tooltip on top" data-placement="top" data-toggle="tooltip" class="btn btn-default tooltips" type="button">Tooltip Top</button>
+							<button title="Tooltip on bottom" data-placement="bottom" data-toggle="tooltip" class="btn btn-default tooltips" type="button">Tooltip Bottom</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-footer">
+				<div class="pull-left">
+					<strong>@版权所有：</strong>临沂市拓普网络股份有限公司
+				</div>
+				<div class="pull-right hidden-sm hidden-xs">@Copyright:2016-2017</div>
+		</div>
+	</div>
+	<!-- /#wrapper -->
+	<!-- #config -->
+	<div id="config-tool" class="closed">
+		<a class="config-tool-bar"><i class="fa  fa-cog"></i></a>
+		<div class="config-tool-content">
+			<h4>设置选项</h4>
+			<ul>
+				<li>
+					<input type="checkbox" id="config-fixed-header">
+					<span> 头部固定</span>
+				</li>
+				<li>
+					<input type="checkbox" id="config-fixed-left">
+					<span> 菜单固定 </span>
+				</li>
+				<li>
+					<input type="checkbox" id="config-fixed-footer">
+					<span> 底部固定 </span>
+				</li>
+			</ul>
+			<br>
+			<h4>主题颜色</h4>
+			<ul class="skin-colors clearfix" id="skin-colors">
+				<li>
+					<a class="skin-changer" data-skin="skin-black" data-toggle="tooltip" title="" style="background-color: #34495e;" data-original-title="黑色皮肤"> </a>
+				</li>
+				<li>
+					<a class="skin-changer" data-skin="skin-green" data-toggle="tooltip" title="" style="background-color: #2ecc71;" data-original-title="绿色皮肤"> </a>
+				</li>
+				<li>
+					<a class="skin-changer" data-skin="skin-blue" data-toggle="tooltip" title="" style="background-color: #03a9f4;" data-original-title="蓝色皮肤"> </a>
+				</li>
+				<li>
+					<a class="skin-changer" data-skin="skin-red" data-toggle="tooltip" title="" style="background-color: #e74c3c;" data-original-title="红色皮肤"> </a>
+				</li>
+				<li>
+					<a class="skin-changer" data-skin="skin-darkblue" data-toggle="tooltip" title="" style="background-color: #418BCA;" data-original-title="深蓝皮肤"> </a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- /#config -->
+	<!-- jQuery -->
+	<script src="static/plugins/jquery/jquery.min.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="static/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- 菜单插件 JavaScript -->
+	<script src="static/plugins/metisMenu/metisMenu.js"></script>
+	<!-- 统计图表Echarts -->
+	<script src="static/plugins/echarts/echarts-all.js"></script>
+	<!-- 消息提示插件 -->
+	<script src="static/plugins/toastr/toastr.js"></script>
+	<script src="static/plugins/bootstrap-dialog/js/bootstrap-dialog.js"></script>
+	<script src="static/plugins/bootstrap-table/bootstrap-table.js"></script>
+	<script src="static/plugins/slimscroll/jquery.slimscroll.js"></script>
+	
+	<script src="static/js/liui-main.js"></script>
+</body>
+
+</html>

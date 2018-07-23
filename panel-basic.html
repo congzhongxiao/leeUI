@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>LIUI-V2</title>
+<!-- Bootstrap Core CSS -->
+<link href="static/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- 列表 -->
+<link href="static/plugins/bootstrap-table/bootstrap-table.css" rel="stylesheet">
+<!-- 弹出对话框 -->
+<link href="static/plugins/bootstrap-dialog/css/bootstrap-dialog.css" rel="stylesheet">
+<!-- 消息提示 -->
+<link href="static/plugins/toastr/toastr.css" rel="stylesheet">
+<link href="static/plugins/pace/themes/pace-theme-minimal.css" rel="stylesheet">
+<!-- 菜单 -->
+<link href="static/plugins/metisMenu/metisMenu.css" rel="stylesheet">
+<!-- 自定义样式 CSS -->
+<link href="static/css/main-style.css" rel="stylesheet">
+<!-- Custom Fonts -->
+<link href="static/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="skin-default">
+	<div class="wrapper">
+		<div class="main-header">
+			<nav class="navbar nav-static-top">
+				<a href="#" class="logo  hidden-sm hidden-xs"><i class="fa  fa-coffee"></i> <span>LIUI2.0</span></a>
+				<div class="navbar-custom-menu pull-left ">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="javascript:void(0);" class="sidebar-toggle"> <i class="fa fa-bars"></i>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" >系统功能</a>
+						</li>
+						<li class="dropdown  hidden-sm hidden-xs">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">更多<i class="fa fa-caret-down"></i>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">英语</a>
+								</li>
+								<li>
+									<a href="#">中文</a>
+								</li>
+								<li>
+									<a href="#">日文</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="navbar-custom-menu pull-right">
+					<ul class="nav navbar-nav">
+						<li class="dropdown message-menu" >
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" title="系统功能" data-placement="bottom" data-toggle="tooltip"> <i class="fa fa-envelope-o"></i> <span class="label label-success">4</span>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li>
+									<p class="red">你有4条未读信息</p>
+								</li>
+								<li>
+									<a href="#"> <span class="photo">
+											<img alt="" src="./static/images/avator.jpg">
+										</span> <span class="subject">
+											<span class="from">系统管理员</span>
+											<span class="time">5分钟前</span>
+										</span> <span class="message" >公司培训通知于今天下午开始公司培训通知于今天下午开始公司培训通知于今天下午开始公司培训通知于今天下午开始公司培训通知于今天下午开始</span>
+									</a>
+								</li>
+								<li>
+									<a href="#"> <span class="photo">
+											<img alt="" src="./static/images/avator.jpg">
+										</span> <span class="subject">
+											<span class="from">系统管理员</span>
+											<span class="time">5分钟前</span>
+										</span> <span class="message">公司培训通知于今天下午开始</span>
+									</a>
+								</li>
+								<li>
+									<a href="#"> <span class="photo">
+											<img alt="" src="./static/images/avator.jpg">
+										</span> <span class="subject">
+											<span class="from">系统管理员</span>
+											<span class="time">5分钟前</span>
+										</span> <span class="message">公司培训通知于今天下午开始</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="dropdown-footer">显示所有通知</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown notifications-menu ">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-bell-o"></i> <span class="label label-warning">4</span>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li>
+									<p class="yellow">你有4条通知</p>
+								</li>
+								<li>
+									<a href="#"> <span class="label label-danger">
+											<i class="fa fa-bell-o"></i>
+										</span> 服务于50分钟前重启。 <span class="pull-right text-muted small">34 分钟</span>
+									</a>
+								</li>
+								<li>
+									<a href="#"> <span class="label label-danger">
+											<i class="fa fa-bell-o"></i>
+										</span> 服务于50分钟前重启。 <span class="pull-right text-muted small">34 分钟</span>
+									</a>
+								</li>
+								<li>
+									<a href="#"> <span class="label label-danger">
+											<i class="fa fa-bell-o"></i>
+										</span> 服务于50分钟前重启。 <span class="pull-right text-muted small">34 分钟</span>
+									</a>
+								</li>
+								<li>
+									<a href="#"> <span class="label label-warning">
+											<i class="fa fa-plus"></i>
+										</span> 服务于10分钟停机了。 <span class="pull-right text-muted small">23 分钟</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="dropdown-footer">显示所有通知</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown user user-menu ">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img alt="" src="./static/images/avator.jpg" class="user-image"> <span>
+									李永涛
+									<i class="fa fa-caret-down"></i>
+								</span>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li>
+									<a href="#"><i class="fa fa-user"></i>个人信息</a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-cog"></i> 修改密码</a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-power-off"></i> 注销</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0);" title="退出" data-placement="bottom" data-toggle="tooltip"> <i class="fa fa-power-off"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="main-left">
+			<div class="left-sidebar">
+				<!-- 左侧菜单头像区域 -->
+				<div class="user-pannel">
+					<div class="pull-left image">
+						<img class="img-circle user-left-img" src="./static/images/avator.jpg">
+					</div>
+					<div class="pull-left info">
+						<p>李永涛</p>
+						<a href="#"><i class="fa fa-circle text-success"></i> 当前在线</a>
+					</div>
+				</div>
+				<!--end 左侧菜单头像区域 -->
+				<ul class="nav left-menu" id="left-menu">
+					<li class="header">
+						导航
+						<span class="header-second">NAVIGATION</span>
+					</li>
+					<li>
+						<a href="index.html"><i class="fa fa-dashboard fa-fw"></i> 首页</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);"><i class="fa fa-flask fa-fw"></i>UI元素<span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li>
+								<a href="buttons.html">按钮</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">面板 <span class="fa arrow"></span></a>
+								<ul class="nav nav-third-level collapse ">
+									<li>
+										<a href="panel-basic.html">面板内容</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="widget.html">小部件</a>
+							</li>
+							<li>
+								<a href="general.html">一般元素</a>
+							</li>
+							<li>
+								<a href="sparkline.html">SparkLine图表</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:void(0);"><i class="fa fa-bars fa-fw"></i>三级菜单<span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li>
+								<a href="erji">二级菜单</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">三级菜单 <span class="fa arrow"></span></a>
+								<ul class="nav nav-third-level collapse ">
+									<li>
+										<a href="#">三级一</a>
+									</li>
+									<li>
+										<a href="#">三级二</a>
+									</li>
+									<li>
+										<a href="#">三级三</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="main-content">
+			<div class="row">
+				<div class="main-content-header">
+					<ul class="breadcrumb">
+						<li>
+
+							<a href="#"><i class="fa fa-home"></i>首页</a>
+						</li>
+						<li class="active">面板</li>
+						<li class="active">面板内容</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="panel">
+						<div class="panel-heading">
+						有头有脚的面板
+						</div>
+						<div class="panel-body">
+							<h4>面板内容</h4>
+							<p>美国社会以往以参军为荣的风气也在逐渐改变，不少人认为参军对年轻人不是一条好出路。据美国《陆军时报》报道，参军甚至被看作是最差的工作之一。</p>
+						</div>
+						<div class="panel-footer">
+							面板底部
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="panel">
+						<div class="panel-heading">
+						有头的面板
+						</div>
+						<div class="panel-body">
+							<h4>面板内容</h4>
+							<p>美国社会以往以参军为荣的风气也在逐渐改变，不少人认为参军对年轻人不是一条好出路。据美国《陆军时报》报道，参军甚至被看作是最差的工作之一。“美国大众认为青年人参军仅仅是因为他们没有更好的事可以做，这让我感到遗憾。”美国军事观察人士詹姆斯·考克斯说。</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="panel">
+						<div class="panel-body">
+							<h4>面板内容</h4>
+							<p>美国社会以往以参军为荣的风气也在逐渐改变，不少人认为参军对年轻人不是一条好出路。据美国《陆军时报》报道，参军甚至被看作是最差的工作之一。“美国大众认为青年人参军仅仅是因为他们没有更好的事可以做，这让我感到遗憾。”美国军事观察人士詹姆斯·考克斯说。</p>
+						</div>
+						<div class="panel-footer">
+							有脚的面板
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="panel">
+						<div class="panel-heading">
+						有小副标题的面板 <small>小小的副标题</small>
+						</div>
+						<div class="panel-body">
+							<h4>面板内容</h4>
+							<p>美国社会以往以参军为荣的风气也在逐渐改变，不少人认为参军对年轻人不是一条好出路。据美国《陆军时报》报道，参军甚至被看作是最差的工作之一。</p>
+						</div>
+						<div class="panel-footer">
+							面板底部
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="panel">
+						<div class="panel-heading">
+						<i class="icon fa fa-home"></i>有图标的面板<span class="label label-danger">News</span>
+						</div>
+						<div class="panel-body">
+							<h4>面板内容</h4>
+							<p>美国社会以往以参军为荣的风气也在逐渐改变，不少人认为参军对年轻人不是一条好出路。据美国《陆军时报》报道，参军甚至被看作是最差的工作之一。“美国大众认为青年人参军仅仅是因为他们没有更好的事可以做，这让我感到遗憾。”美国军事观察人士詹姆斯·考克斯说。</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="panel">
+						<div class="panel-heading">
+						有超链接的标题
+						<div class="tools"><a href="">详情</a><a href="">更多</a></div>
+						<div class="tools pull-right"><a href="">详情</a><a href="">更多</a></div>
+						</div>
+						<div class="panel-body">
+							<h4>面板内容</h4>
+							<p>美国社会以往以参军为荣的风气也在逐渐改变，不少人认为参军对年轻人不是一条好出路。据美国《陆军时报》报道，参军甚至被看作是最差的工作之一。“美国大众认为青年人参军仅仅是因为他们没有更好的事可以做，这让我感到遗憾。”美国军事观察人士詹姆斯·考克斯说。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="panel">
+						<div class="panel-heading">
+						下拉选项的面板
+						<div class="btn-group ">
+								<button data-toggle="dropdown" class="btn btn-noborder dropdown-toggle btn-xs" type="button">
+									更多操作 <span class="caret"></span>
+								</button>
+								<ul role="menu" class="dropdown-menu">
+									<li><a href="#">编辑</a></li>
+									<li><a href="#">删除</a></li>
+									<li><a href="#">复制</a></li>
+									<li class="divider"></li>
+									<li><a href="#">属性</a></li>
+								</ul>
+						</div>
+						<div class="btn-group pull-right">
+								<button data-toggle="dropdown" class="btn btn-noborder dropdown-toggle btn-xs" type="button">
+									更多操作 <span class="caret"></span>
+								</button>
+								<ul role="menu" class="dropdown-menu">
+									<li><a href="#">编辑</a></li>
+									<li><a href="#">删除</a></li>
+									<li><a href="#">复制</a></li>
+									<li class="divider"></li>
+									<li><a href="#">属性</a></li>
+								</ul>
+						</div>
+						</div>
+						<div class="panel-body">
+							<h4>面板内容</h4>
+							<p>美国社会以往以参军为荣的风气也在逐渐改变，不少人认为参军对年轻人不是一条好出路。据美国《陆军时报》报道，参军甚至被看作是最差的工作之一。</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="panel ">
+						<div class="panel-heading">
+						工具栏面板
+						<div class="pull-right tools">
+								<a class="fa fa-chevron-down"></a> <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"> <i class="fa fa-wrench"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">选项1</a>
+									</li>
+									<li>
+										<a href="#">选项2</a>
+									</li>
+								</ul>
+								<a class="fa fa-times"></a>
+							</div>
+						</div>
+						<div class="panel-body">
+							<h4>面板内容</h4>
+							<p>美国社会以往以参军为荣的风气也在逐渐改变，不少人认为参军对年轻人不是一条好出路。据美国《陆军时报》报道，参军甚至被看作是最差的工作之一。</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="panel ">
+						<div class="panel-heading">
+						带表格的面板
+						</div>
+						<table class="table table-hover">
+					        <thead>
+					          <tr>
+					            <th>编号</th>
+					            <th>姓</th>
+					            <th>名</th>
+					            <th>用户名</th>
+					          </tr>
+					        </thead>
+					        <tbody>
+					          <tr>
+					            <th scope="row">1</th>
+					            <td>Mark</td>
+					            <td>Otto</td>
+					            <td>@mdo</td>
+					          </tr>
+					          <tr>
+					            <th scope="row">2</th>
+					            <td>Jacob</td>
+					            <td>Thornton</td>
+					            <td>@fat</td>
+					          </tr>
+					          <tr>
+					            <th scope="row">3</th>
+					            <td>Larry</td>
+					            <td>the Bird</td>
+					            <td>@twitter</td>
+					          </tr>
+					        </tbody>
+					      </table>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="panel">
+						<div class="panel-heading">
+						带列表组的面板
+						</div>
+						<div class="panel-body">
+							<code>panel-body</code>的内容
+						</div>
+						<ul class="list-group">
+							<li class="list-group-item">列表一的内容</li>
+							<li class="list-group-item">列表二的内容</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="panel">
+						<div class="panel-heading">
+						选项卡内容的面板
+						</div>
+						<ul class="nav nav-tabs nav-tabs-cust">
+							<li class="active"><a href="#tab1" data-toggle="tab"><i class="icon fa fa-cog "></i>设置内容</a></li>
+							<li><a href="#tab2" data-toggle="tab"><i class="icon fa fa-user"></i>人员信息</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">更多<i class="fa fa-caret-down"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#tab3" data-toggle="tab"><i class="icon fa fa-user"></i>选项卡三</a>
+									</li>
+									<li>
+										<a href="#tab4" data-toggle="tab"><i class="icon fa fa-user"></i>选项卡四</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<div class="panel-body">
+							<div class="tab-content">
+								<div class="tab-pane active" id="tab1">
+									<label class="label label-success">这个是选项卡一的内容哦</label>
+									<p>美国社会以往以参军为荣的风气也在逐渐改变，不少人认为参军对年轻人不是一条好出路。据美国《陆军时报》报道，参军甚至被看作是最差的工作之一。</p>
+								</div>
+								<div class="tab-pane" id="tab2">
+									<label class="label label-info">这个是选项卡二的内容哦</label>
+									<p>美国社会以往以参军为荣的风气也在逐渐改变，不少人认为参军对年轻人不是一条好出路。据美国《陆军时报》报道，参军甚至被看作是最差的工作之一。</p>
+								</div>
+								<div class="tab-pane" id="tab3">
+									<label class="label label-primary">这个是选项卡三的内容哦</label>
+									<p>美国社会以往以参军为荣的风气也在逐渐改变，不少人认为参军对年轻人不是一条好出路。据美国《陆军时报》报道，参军甚至被看作是最差的工作之一。</p>
+								</div>
+								<div class="tab-pane" id="tab4">
+									<label class="label label-warning">这个是选项卡四的内容哦</label>
+										<p>美国社会以往以参军为荣的风气也在逐渐改变，不少人认为参军对年轻人不是一条好出路。据美国《陆军时报》报道，参军甚至被看作是最差的工作之一。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="panel">
+						<div class="panel-heading">
+						选项卡内容的面板
+						</div>
+						
+						<div class="panel-body">
+							<div class="tab-content">
+								<div class="tab-pane active" id="tab11">
+									<label class="label label-success">这个是选项卡一的内容哦</label>
+									<p>美国社会以往以参军为荣的风气也在逐渐改变，不少人认为参军对年轻人不是一条好出路。据美国《陆军时报》报道，参军甚至被看作是最差的工作之一。</p>
+								</div>
+								<div class="tab-pane" id="tab12">
+									<label class="label label-info">这个是选项卡二的内容哦</label>
+									<p>美国社会以往以参军为荣的风气也在逐渐改变，不少人认为参军对年轻人不是一条好出路。据美国《陆军时报》报道，参军甚至被看作是最差的工作之一。</p>
+								</div>
+								<div class="tab-pane" id="tab13">
+									<label class="label label-primary">这个是选项卡三的内容哦</label>
+									<p>美国社会以往以参军为荣的风气也在逐渐改变，不少人认为参军对年轻人不是一条好出路。据美国《陆军时报》报道，参军甚至被看作是最差的工作之一。</p>
+								</div>
+								<div class="tab-pane" id="tab14">
+									<label class="label label-warning">这个是选项卡四的内容哦</label>
+										<p>美国社会以往以参军为荣的风气也在逐渐改变，不少人认为参军对年轻人不是一条好出路。据美国《陆军时报》报道，参军甚至被看作是最差的工作之一。</p>
+								</div>
+							</div>
+						</div>
+						<ul class="nav nav-tabs nav-tabs-cust-buttom dropup">
+							<li class="active"><a href="#tab11" data-toggle="tab"><i class="icon fa fa-cog "></i>设置内容</a></li>
+							<li><a href="#tab12" data-toggle="tab"><i class="icon fa fa-user"></i>人员信息</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">更多<i class="fa fa-caret-up"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#tab13" data-toggle="tab"><i class="icon fa fa-user"></i>选项卡三</a>
+									</li>
+									<li>
+										<a href="#tab14" data-toggle="tab"><i class="icon fa fa-user"></i>选项卡四</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+						重要面板
+						</div>
+						<div class="panel-body">
+							<h4>面板内容</h4>
+							<p>美国社会以往以参军为荣的风气也在逐渐改变，不少人认为参军对年轻人不是一条好出路。据美国《陆军时报》报道，参军甚至被看作是最差的工作之一。</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="panel panel-info">
+						<div class="panel-heading">
+						信息面板
+						</div>
+						<div class="panel-body">
+							<h4>面板内容</h4>
+							<p>美国社会以往以参军为荣的风气也在逐渐改变，不少人认为参军对年轻人不是一条好出路。据美国《陆军时报》报道，参军甚至被看作是最差的工作之一。</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="panel panel-warning">
+						<div class="panel-heading">
+						警告面板
+						<div class="pull-right tools">
+								<a class="fa fa-chevron-down"></a> <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"> <i class="fa fa-wrench"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">选项1</a>
+									</li>
+									<li>
+										<a href="#">选项2</a>
+									</li>
+								</ul>
+								<a class="fa fa-times"></a>
+							</div>
+						</div>
+						<div class="panel-body">
+							<h4>面板内容</h4>
+							<p>美国社会以往以参军为荣的风气也在逐渐改变，不少人认为参军对年轻人不是一条好出路。据美国《陆军时报》报道，参军甚至被看作是最差的工作之一。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="panel panel-danger">
+						<div class="panel-heading">
+						危险面板
+						<div class="pull-right tools">
+								<a class="fa fa-chevron-down"></a> <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"> <i class="fa fa-wrench"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">选项1</a>
+									</li>
+									<li>
+										<a href="#">选项2</a>
+									</li>
+								</ul>
+								<a class="fa fa-times"></a>
+							</div>
+						</div>
+						<div class="panel-body">
+							<h4>面板内容</h4>
+							<p>美国社会以往以参军为荣的风气也在逐渐改变，不少人认为参军对年轻人不是一条好出路。据美国《陆军时报》报道，参军甚至被看作是最差的工作之一。</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="panel panel-success">
+						<div class="panel-heading">
+						成功面板
+						<div class="pull-right tools">
+								<a class="fa fa-chevron-down"></a> <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"> <i class="fa fa-wrench"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">选项1</a>
+									</li>
+									<li>
+										<a href="#">选项2</a>
+									</li>
+								</ul>
+								<a class="fa fa-times"></a>
+							</div>
+						</div>
+						<div class="panel-body">
+							<h4>面板内容</h4>
+							<p>美国社会以往以参军为荣的风气也在逐渐改变，不少人认为参军对年轻人不是一条好出路。据美国《陆军时报》报道，参军甚至被看作是最差的工作之一。</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+						灰色面板
+						<div class="pull-right tools">
+								<a class="fa fa-chevron-down"></a> <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"> <i class="fa fa-wrench"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">选项1</a>
+									</li>
+									<li>
+										<a href="#">选项2</a>
+									</li>
+								</ul>
+								<a class="fa fa-times"></a>
+							</div>
+						</div>
+						<div class="panel-body">
+							<h4>面板内容</h4>
+							<p>美国社会以往以参军为荣的风气也在逐渐改变，不少人认为参军对年轻人不是一条好出路。据美国《陆军时报》报道，参军甚至被看作是最差的工作之一。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-footer">
+			<div class="pull-left">
+				<strong>@版权所有：</strong>临沂市拓普网络股份有限公司
+			</div>
+			<div class="pull-right hidden-sm hidden-xs">@Copyright:2016-2017</div>
+		</div>
+	</div>
+	<!-- /#wrapper -->
+	<!-- #config -->
+	<div id="config-tool" class="closed">
+		<a class="config-tool-bar"><i class="fa  fa-cog"></i></a>
+		<div class="config-tool-content">
+			<h4>设置选项</h4>
+			<ul>
+				<li>
+					<input type="checkbox" id="config-fixed-header">
+					<span> 头部固定</span>
+				</li>
+				<li>
+					<input type="checkbox" id="config-fixed-left">
+					<span> 菜单固定 </span>
+				</li>
+				<li>
+					<input type="checkbox" id="config-fixed-footer" >
+					<span> 底部固定 </span>
+				</li>
+			</ul>
+			<br>
+			<h4>主题颜色</h4>
+			<ul class="skin-colors clearfix" id="skin-colors">
+				<li>
+					<a class="skin-changer" data-skin="skin-black" data-toggle="tooltip" title="" style="background-color: #34495e;" data-original-title="黑色皮肤"> </a>
+				</li>
+				<li>
+					<a class="skin-changer" data-skin="skin-green" data-toggle="tooltip" title="" style="background-color: #2ecc71;" data-original-title="绿色皮肤"> </a>
+				</li>
+				<li>
+					<a class="skin-changer" data-skin="skin-blue" data-toggle="tooltip" title="" style="background-color: #03a9f4;" data-original-title="蓝色皮肤"> </a>
+				</li>
+				<li>
+					<a class="skin-changer" data-skin="skin-red" data-toggle="tooltip" title="" style="background-color: #e74c3c;" data-original-title="红色皮肤"> </a>
+				</li>
+				<li>
+					<a class="skin-changer" data-skin="skin-darkblue" data-toggle="tooltip" title="" style="background-color: #418BCA;" data-original-title="深蓝皮肤"> </a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- /#config -->
+	<!-- jQuery -->
+	<script src="static/plugins/jquery/jquery.min.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="static/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<!-- 菜单插件 JavaScript -->
+	<script src="static/plugins/metisMenu/metisMenu.js"></script>
+	<!-- 统计图表Echarts -->
+	<script src="static/plugins/echarts/echarts.js"></script>
+	<script src="static/plugins/echarts/theme/default.js"></script>
+	<!-- 消息提示插件 -->
+	<script src="static/plugins/toastr/toastr.js"></script>
+	<script src="static/plugins/bootstrap-dialog/js/bootstrap-dialog.js"></script>
+	<script src="static/plugins/bootstrap-table/bootstrap-table.js"></script>
+	<script src="static/plugins/sparkline/jquery.sparkline.js"></script>
+	<script src="static/plugins/pace/pace.js"></script>
+	<script src="static/plugins/slimscroll/jquery.slimscroll.js"></script>
+	<script src="static/js/sparkline-demo.js"></script>
+	<script src="static/js/liui-main.js"></script>
+</body>
+</html>

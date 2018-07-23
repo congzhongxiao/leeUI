@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>LIUI-V2</title>
+<!-- Bootstrap Core CSS -->
+<link href="static/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- 列表 -->
+<link href="static/plugins/bootstrap-table/bootstrap-table.css" rel="stylesheet">
+<!-- 弹出对话框 -->
+<link href="static/plugins/bootstrap-dialog/css/bootstrap-dialog.css" rel="stylesheet">
+<!-- 消息提示 -->
+<link href="static/plugins/toastr/toastr.css" rel="stylesheet">
+<link href="static/plugins/pace/themes/pace-theme-minimal.css" rel="stylesheet">
+<!-- 菜单 -->
+<link href="static/plugins/metisMenu/metisMenu.css" rel="stylesheet">
+<!-- 动画样式 -->
+<link href="static/plugins/animate/animate.css" rel="stylesheet">
+<!-- 自定义样式 CSS -->
+<link href="static/css/main-style.css" rel="stylesheet">
+<!-- Custom Fonts -->
+<link href="static/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="skin-default">
+	<div class="wrapper">
+		<div class="main-header">
+			<nav class="navbar nav-static-top">
+				<a href="#" class="logo  hidden-sm hidden-xs"><i class="fa  fa-coffee"></i> <span>LIUI2.0</span></a>
+				<div class="navbar-custom-menu pull-left ">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="javascript:void(0);" class="sidebar-toggle"> <i class="fa fa-bars"></i>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" >系统功能</a>
+						</li>
+						<li class="dropdown  hidden-sm hidden-xs">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">更多<i class="fa fa-caret-down"></i>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">英语</a>
+								</li>
+								<li>
+									<a href="#">中文</a>
+								</li>
+								<li>
+									<a href="#">日文</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="navbar-custom-menu pull-right">
+					<ul class="nav navbar-nav">
+						<li class="dropdown message-menu" >
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" title="系统功能" data-placement="bottom" data-toggle="tooltip"> <i class="fa fa-envelope-o"></i> <span class="label label-success">4</span>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li>
+									<p class="red">你有4条未读信息</p>
+								</li>
+								<li>
+									<a href="#"> <span class="photo">
+											<img alt="" src="./static/images/avator.jpg">
+										</span> <span class="subject">
+											<span class="from">系统管理员</span>
+											<span class="time">5分钟前</span>
+										</span> <span class="message" >公司培训通知于今天下午开始公司培训通知于今天下午开始公司培训通知于今天下午开始公司培训通知于今天下午开始公司培训通知于今天下午开始</span>
+									</a>
+								</li>
+								<li>
+									<a href="#"> <span class="photo">
+											<img alt="" src="./static/images/avator.jpg">
+										</span> <span class="subject">
+											<span class="from">系统管理员</span>
+											<span class="time">5分钟前</span>
+										</span> <span class="message">公司培训通知于今天下午开始</span>
+									</a>
+								</li>
+								<li>
+									<a href="#"> <span class="photo">
+											<img alt="" src="./static/images/avator.jpg">
+										</span> <span class="subject">
+											<span class="from">系统管理员</span>
+											<span class="time">5分钟前</span>
+										</span> <span class="message">公司培训通知于今天下午开始</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="dropdown-footer">显示所有通知</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown notifications-menu ">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-bell-o"></i> <span class="label label-warning">4</span>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li>
+									<p class="yellow">你有4条通知</p>
+								</li>
+								<li>
+									<a href="#"> <span class="label label-danger">
+											<i class="fa fa-bell-o"></i>
+										</span> 服务于50分钟前重启。 <span class="pull-right text-muted small">34 分钟</span>
+									</a>
+								</li>
+								<li>
+									<a href="#"> <span class="label label-danger">
+											<i class="fa fa-bell-o"></i>
+										</span> 服务于50分钟前重启。 <span class="pull-right text-muted small">34 分钟</span>
+									</a>
+								</li>
+								<li>
+									<a href="#"> <span class="label label-danger">
+											<i class="fa fa-bell-o"></i>
+										</span> 服务于50分钟前重启。 <span class="pull-right text-muted small">34 分钟</span>
+									</a>
+								</li>
+								<li>
+									<a href="#"> <span class="label label-warning">
+											<i class="fa fa-plus"></i>
+										</span> 服务于10分钟停机了。 <span class="pull-right text-muted small">23 分钟</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="dropdown-footer">显示所有通知</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown user user-menu ">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img alt="" src="./static/images/avator.jpg" class="user-image"> <span>
+									李永涛
+									<i class="fa fa-caret-down"></i>
+								</span>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li>
+									<a href="#"><i class="fa fa-user"></i>个人信息</a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-cog"></i> 修改密码</a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-power-off"></i> 注销</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0);" title="退出" data-placement="bottom" data-toggle="tooltip"> <i class="fa fa-power-off"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="main-left">
+			<div class="left-sidebar">
+				<!-- 左侧菜单头像区域 -->
+				<div class="user-pannel">
+					<div class="pull-left image">
+						<img class="img-circle user-left-img" src="./static/images/avator.jpg">
+					</div>
+					<div class="pull-left info">
+						<p>李永涛</p>
+						<a href="#"><i class="fa fa-circle text-success"></i> 当前在线</a>
+					</div>
+				</div>
+				<!--end 左侧菜单头像区域 -->
+				<ul class="nav left-menu" id="left-menu">
+					<li class="header">
+						导航
+						<span class="header-second">NAVIGATION</span>
+					</li>
+					<li>
+						<a href="index.html"><i class="fa fa-dashboard fa-fw"></i> 首页</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);"><i class="fa fa-flask fa-fw"></i>UI元素<span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li>
+								<a href="buttons.html">按钮</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">面板 <span class="fa arrow"></span></a>
+								<ul class="nav nav-third-level collapse ">
+									<li>
+										<a href="panel-basic.html">面板内容</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="icons.html">图标</a>
+							</li>
+							<li>
+								<a href="dropdown.html">下拉菜单</a>
+							</li>
+							<li>
+								<a href="typography.html">排版</a>
+							</li>
+							<li>
+								<a href="tabs-accordions.html">选项卡+折叠面板</a>
+							</li>
+							<li>
+								<a href="notifications.html">通知+提示</a>
+							</li>
+							<li>
+								<a href="toastr-notifications.html">toastr通知</a>
+							</li>
+							<li>
+								<a href="sweet-alert.html">Sweet Alert弹窗</a>
+							</li>
+							<li>
+								<a href="modals.html">模态框</a>
+							</li>
+							<li>
+								<a href="grids.html">栅格</a>
+							</li>
+							<li>
+								<a href="animate.html">动画</a>
+							</li>
+							<li>
+								<a href="carousel.html">轮播组件</a>
+							</li>
+							<li>
+								<a href="widget.html">小部件</a>
+							</li>
+							<li>
+								<a href="general.html">一般元素</a>
+							</li>
+							<li>
+								<a href="sparkline.html">SparkLine图表</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:void(0);"><i class="fa fa-flask fa-fw"></i>页面示例<span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li>
+								<a href="userfirst.html">新手引导</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="main-content">
+			<div class="row">
+				<div class="main-content-header">
+					<ul class="breadcrumb">
+						<li>
+							<a href="#"><i class="fa fa-home"></i>首页</a>
+						</li>
+						<li class="active">模态框</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="panel">
+						<div class="panel-body">
+							<button class="btn btn-default"   data-target="#m-default" data-toggle="modal">默认形式</button>
+							<button class="btn btn-default"   data-target="#m-top" data-toggle="modal">顶部显示</button>
+							<button class="btn btn-default"   data-target="#m-center" data-toggle="modal">居中显示</button>
+							<button class="btn btn-default"   data-target="#m-bottom" data-toggle="modal">底部显示</button>
+							<button class="btn btn-default"   data-target="#m-right" data-toggle="modal">右侧显示</button>
+							<button class="btn btn-default"   data-target="#m-big" data-toggle="modal">大尺寸</button>
+							<button class="btn btn-default"   data-target="#m-small" data-toggle="modal">小尺寸</button>
+							<button class="btn btn-default"   data-target="#m-tab" data-toggle="modal">选项卡模态框</button>
+							<button class="btn btn-primary"   data-target="#m-primary" data-toggle="modal">重要模态框</button>
+							<button class="btn btn-info"   data-target="#m-info" data-toggle="modal">信息模态框</button>
+							<button class="btn btn-success"   data-target="#m-success" data-toggle="modal">成功模态框</button>
+							<button class="btn btn-warning"   data-target="#m-warning" data-toggle="modal">警告模态框</button>
+							<button class="btn btn-danger"   data-target="#m-danger" data-toggle="modal">危险模态框</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-footer">
+			<div class="pull-left">
+				<strong>@版权所有：</strong>临沂市拓普网络股份有限公司
+			</div>
+			<div class="pull-right hidden-sm hidden-xs">@Copyright:2016-2017</div>
+		</div>
+	</div>
+	<!-- /#wrapper -->
+	<div class="modal fade " id="m-default" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog">
+			<div class="modal-content ">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<div class="modal-title">标题</div>
+				</div>
+				<div class="modal-body">
+					这里是模态框组件演示中心，请大家仔细看哦。
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary">确定</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade " id="m-primary" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog modal-primary">
+			<div class="modal-content ">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<div class="modal-title">标题</div>
+				</div>
+				<div class="modal-body">
+					这里是模态框组件演示中心，请大家仔细看哦。
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary">确定</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade " id="m-info" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog modal-info">
+			<div class="modal-content ">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<div class="modal-title">标题</div>
+				</div>
+				<div class="modal-body">
+					这里是模态框组件演示中心，请大家仔细看哦。
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary">确定</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade " id="m-success" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog modal-success">
+			<div class="modal-content ">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<div class="modal-title">标题</div>
+				</div>
+				<div class="modal-body">
+					这里是模态框组件演示中心，请大家仔细看哦。
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary">确定</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade " id="m-danger" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog modal-danger">
+			<div class="modal-content ">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<div class="modal-title">标题</div>
+				</div>
+				<div class="modal-body">
+					这里是模态框组件演示中心，请大家仔细看哦。
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary">确定</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade " id="m-warning" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog modal-warning">
+			<div class="modal-content ">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<div class="modal-title">标题</div>
+				</div>
+				<div class="modal-body">
+					这里是模态框组件演示中心，请大家仔细看哦。
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary">确定</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade " id="m-tab" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog">
+			<div class="modal-content ">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<div class="modal-title">标题</div>
+				</div>
+				<div class="nav-tabs-horizontal ">
+					<ul class="nav nav-tabs nav-tabs-line">
+						<li class="active"><a href="#tab61" data-toggle="tab">首页</a></li>
+						<li><a href="#tab62" data-toggle="tab">新闻</a></li>
+						<li><a href="#tab63" data-toggle="tab">赞助</a></li>
+						<li><a href="#tab64" data-toggle="tab">任务</a></li>
+					</ul>
+					
+				</div>
+				<div class="modal-body">
+					<div class="tab-content">
+						<div class="tab-pane active" id="tab61">
+							<p>这几天心里颇不宁静。今晚在院子里坐着乘凉，忽然想起日日走过的荷塘，在这满月的光里，总该另有一番样子吧。月亮渐渐地升高了，墙外马路上孩子们的欢笑，已经听不见了；妻在屋里拍着闰儿，迷迷糊糊地哼着眠歌。我悄悄地披了大衫，带上门出去。 沿着荷塘，是一条曲折的小煤屑路。这是一条幽僻的路；白天也少人走，夜晚更加寂寞。荷塘四面，长着许多树，蓊蓊郁郁的。路的一旁，是些杨柳，和一些不知道名字的树。没有月光的晚上，这路上阴森森的，有些怕人。今晚却很好，虽然月光也还是淡淡的。</p>
+							<p>这几天心里颇不宁静。今晚在院子里坐着乘凉，忽然想起日日走过的荷塘，在这满月的光里，总该另有一番样子吧。月亮渐渐地升高了，墙外马路上孩子们的欢笑，已经听不见了；妻在屋里拍着闰儿，迷迷糊糊地哼着眠歌。我悄悄地披了大衫，带上门出去。 沿着荷塘，是一条曲折的小煤屑路。这是一条幽僻的路；白天也少人走，夜晚更加寂寞。荷塘四面，长着许多树，蓊蓊郁郁的。路的一旁，是些杨柳，和一些不知道名字的树。没有月光的晚上，这路上阴森森的，有些怕人。今晚却很好，虽然月光也还是淡淡的。</p>
+						</div>
+						<div class="tab-pane" id="tab62">
+							<p>路上只我一个人，背着手踱着。这一片天地好像是我的；我也像超出了平常的自己，到了另一世界里。我爱热闹，也爱冷静；爱群居，也爱独处。像今晚上，一个人在这苍茫的月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。</p>
+						</div>
+						<div class="tab-pane" id="tab63">
+							<p>曲曲折折的荷塘上面，弥望的是田田的叶子。叶子出水很高，像亭亭的舞女的裙。层层的叶子中间，零星地点缀着些白花，有袅娜地开着的，有羞涩地打着朵儿的；正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉的流水，遮住了，不能见一些颜色；而叶子却更见风致了。</p>
+						</div>
+						<div class="tab-pane" id="tab64">
+							<p>月光如流水一般，静静地泻在这一片叶子和花上。薄薄的青雾浮起在荷塘里。叶子和花仿佛在牛乳中洗过一样；又像笼着轻纱的梦。虽然是满月，天上却有一层淡淡的云，所以不能朗照；但我以为这恰是到了好处——酣眠固不可少，小睡也别有风味的。月光是隔了树照过来的，高处丛生的灌木，落下参差的斑驳的黑影，峭楞楞如鬼一般；弯弯的杨柳的稀疏的倩影，却又像是画在荷叶上。塘中的月色并不均匀；但光与影有着和谐的旋律，如梵婀玲上奏着的名曲。</p>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary">确定</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade " id="m-big" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content ">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<div class="modal-title">标题</div>
+				</div>
+				<div class="modal-body">
+					这里是模态框组件演示中心，请大家仔细看哦。
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary">确定</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade " id="m-small" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content ">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<div class="modal-title">标题</div>
+				</div>
+				<div class="modal-body">
+					这里是模态框组件演示中心，请大家仔细看哦。
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary">确定</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade " id="m-top" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog">
+			<div class="modal-content ">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<div class="modal-title">标题</div>
+				</div>
+				<div class="modal-body">
+					这里是模态框组件演示中心，请大家仔细看哦。
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary">确定</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade " id="m-center" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog modal-center">
+			<div class="modal-content ">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<div class="modal-title">标题</div>
+				</div>
+				<div class="modal-body">
+					这里是模态框组件演示中心，请大家仔细看哦。
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary">确定</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade " id="m-bottom" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog modal-bottom">
+			<div class="modal-content ">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<div class="modal-title">标题</div>
+				</div>
+				<div class="modal-body">
+					这里是模态框组件演示中心，请大家仔细看哦。
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary">确定</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade " id="m-right" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog modal-right modal-sm ">
+			<div class="modal-content ">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<div class="modal-title">标题</div>
+				</div>
+				<div class="modal-body">
+					这里是模态框组件演示中心，请大家仔细看哦。
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary btn-block">确定</button>
+					<button type="button" class="btn btn-default btn-block" data-dismiss="modal">关闭</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- jQuery -->
+	<script src="static/plugins/jquery/jquery.min.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="static/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<!-- 菜单插件 JavaScript -->
+	<script src="static/plugins/metisMenu/metisMenu.js"></script>
+	<!-- 统计图表Echarts -->
+	<script src="static/plugins/echarts/echarts.js"></script>
+	<script src="static/plugins/echarts/theme/default.js"></script>
+	<!-- 消息提示插件 -->
+	<script src="static/plugins/toastr/toastr.js"></script>
+	<script src="static/plugins/bootstrap-dialog/js/bootstrap-dialog.js"></script>
+	<script src="static/plugins/bootstrap-table/bootstrap-table.js"></script>
+	<script src="static/plugins/sparkline/jquery.sparkline.js"></script>
+	<script src="static/plugins/pace/pace.js"></script>
+	<script src="static/plugins/slimscroll/jquery.slimscroll.js"></script>
+	<script src="static/js/sparkline-demo.js"></script>
+	<script src="static/js/liui-main.js"></script>
+</body>
+</html>
